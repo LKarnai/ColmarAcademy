@@ -1,0 +1,217 @@
+html {
+
+}
+
+body {
+  font-family: Helvetica;
+  font-size: 16px;
+
+  line-height: 1.25;
+}
+
+/* Container Padding */
+.container {
+  border: 2px solid blue;
+  padding:32px 24px;
+
+}
+
+/* Header */
+header {
+  /*border for tracking purposes only*/
+  border: 2px solid orange;
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  padding: 0 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.77;
+}
+
+.logo img {
+  height: 2.5rem;
+}
+
+#bold {
+  font-weight: bold;
+}
+
+#light {
+  color: gray;
+}
+
+nav li {
+  display: inline-block;
+  padding: 24px 16px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+
+/* Primary, Secondary, and Exhibit Banner */
+.banner {
+  display: flex;
+  align-items: center;
+}
+
+.main-image.container {
+  width: 60%;
+}
+
+.content {
+  width: 40%;
+}
+
+/* Primary Content */
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: gray;
+  padding-bottom: 24px;
+}
+
+.primary h5 {
+  font-size: 1.75rem;
+  color: gray;
+  padding-bottom: 24px;
+}
+
+.primary p {
+  background-color: gray;
+  border: 2px solid gray;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.primary a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Secondary Banner & Exhibit Media Content */
+
+.secondary img,
+video {
+  padding-bottom: 32px;
+  width: 100%;
+}
+
+/* Secondary Banner Left Column Content */
+
+.secondary h3 {
+  font-size: 2em;
+  font-weight: bold;
+  padding-bottom: 24px;
+}
+
+#hiring {
+  font-size: .75em;
+  padding: 32px 0;
+}
+
+/* Secondary Banner and Thesis Exhibit Right Column */
+
+.about,
+.thesis {
+  border: 2px solid red;
+  display: flex;
+  align-items: center;
+}
+
+.about img,
+.thesis img {
+  height: auto;
+  width: 35%;
+  padding: 16px;
+}
+
+.about-text {
+  width: 65%;
+}
+
+.about-text h5,
+.exhibit h5 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+.about-text p {
+  padding-bottom: 8px;
+}
+
+.about-text a {
+  text-decoration: none;
+}
+
+/* Course Container */
+
+#course-section {
+  border: 2px solid goldenrod;
+}
+
+.section-text h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 32px;
+}
+
+.course-areas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 32px 72px;
+}
+
+.course {
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  margin-bottom: 32px
+
+}
+
+.course img {
+  height: auto;
+}
+
+.subject {
+  padding: 16px 24px 24px 16px;
+}
+
+.subject h6 {
+  padding: 16px 0;
+}
+
+.subject h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Thesis Exhibit right column content */
+
+.exhibit p {
+  padding-bottom: 32px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px 32px 24px;
+  font-size: .75rem;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+  padding-left: 8px;
+}
