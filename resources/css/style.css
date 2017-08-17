@@ -10,7 +10,7 @@ body {
 
 /* Container Padding */
 .container {
-  padding:32px 24px;
+  padding: 32px 24px;
 }
 
 #container {
@@ -66,7 +66,9 @@ nav .link {
    border-radius: 20px;
 }
 
-
+.mobile {
+  display: none;
+}
 
 /* Primary, Secondary, and Exhibit Banner */
 .banner {
@@ -83,7 +85,6 @@ nav .link {
 }
 
 /* Primary Banner Content */
-
 h1 {
   font-size: 3rem;
   font-weight: bold;
@@ -100,6 +101,7 @@ h1 {
   text-align: center;
   width: 100%;
   padding: 8px;
+  border-radius: 10px;
 }
 
 .start a {
@@ -122,7 +124,6 @@ h1 {
 }
 
 /* Secondary Banner & Exhibit Media Content */
-
 .secondary img,
 video {
   padding-bottom: 32px;
@@ -130,7 +131,6 @@ video {
 }
 
 /* Secondary Banner Left Column Content */
-
 .secondary h3 {
   font-size: 2em;
   font-weight: bold;
@@ -143,7 +143,6 @@ video {
 }
 
 /* Secondary Banner & Exhibit Right Column */
-
 .about,
 .thesis {
   display: flex;
@@ -186,7 +185,6 @@ video {
   font-weight: bold;
   text-decoration: none;
 }
-
 
 /* Course Container */
 
@@ -234,7 +232,6 @@ video {
 }
 
 /* Thesis Exhibit right column content */
-
 .exhibit p {
   padding-bottom: 32px;
 }
@@ -252,4 +249,220 @@ footer a {
   color: #F5FAFF;
   text-decoration: none;
   padding-left: 8px;
+}
+
+
+/* Media Queries for Various Laptop/Tablet Viewports */
+@media only screen and (max-width: 1090px) {
+  /*header nav bar*/
+  nav a {
+    padding: 8px 16px;
+  }
+
+  /*primary banner*/
+  h1 {
+    font-size: 2rem;
+  }
+
+  .primary h5 {
+    font-size: 1.25rem;
+  }
+
+  .start {
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+  /*Secondary Banner and Exhibit Banner*/
+  .about-text h5,
+  .exhibit h5 {
+    font-size: 1.5rem;
+    padding-bottom: 8px;
+  }
+}
+
+@media only screen and (max-width: 865px) {
+  body {
+    font-size: 12px;
+  }
+
+  /*header nav bar*/
+  nav a {
+    padding: 8px 8px;
+  }
+
+  /*primary banner*/
+  h1 {
+    padding-bottom: 16px;
+  }
+
+  .primary h5 {
+    font-size: 1rem;
+    padding-bottom: 16px;
+  }
+
+  .start {
+    border-radius: 2.5px;
+  }
+
+  /*Secondary Banner and Exhibit Banner*/
+  .about-text h5,
+  .exhibit h5 {
+    font-size: 1rem;
+    padding-bottom: 8px;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  /*header nav bar*/
+  nav a {
+    padding: 4px 4px;
+  }
+
+  .companies {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    padding-bottom: 8px;
+  }
+
+  .primary h5 {
+    font-size: .75rem;
+    padding-bottom: 8px;
+  }
+
+  /* Secondary Banner and Exhibit Content */
+  .container {
+    padding: 18px 8px;
+  }
+  .section-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .secondary h3,
+  .exhibit h5 {
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 16px;
+  }
+
+  .about-text p {
+    display: none;
+  }
+
+  /* Thesis Exhibt */
+  .subject h5 {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  .subject h6,
+  .subject p {
+    display: none;
+  }
+}
+
+/*Media Queries for Mobile Viewport*/
+@media only screen and (max-width: 480px) {
+  .desktop.nav,
+  .logo,
+  .secondary .main-image.container,
+  .exhibit .main-image.container {
+    display: none;
+  }
+
+  #container {
+    top: 70px;
+  }
+
+  .mobile {
+    display: inline-block;
+  }
+
+  .mobile img {
+    padding-right: 35px;
+  }
+
+  .main-image.container {
+    width: 100%;
+  }
+
+  .primary {
+    border-top: 2px solid #7C98B2;
+    /*border-bottom: 2px solid #7C98B2;*/
+  }
+
+  .banner,
+  .about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 16px;
+  }
+
+  .about {
+  margin-bottom: 10px;
+  border-left: none;
+  border-top: 2px solid #7C98B2;
+  border-bottom: 2px solid #7C98B2;
+  }
+
+  .about img,
+  .thesis img {
+    width: 90%;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .about-text p {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .course img {
+    display: none;
+  }
+
+  .course-areas {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+  .course {
+    width: 100%;
+    margin-bottom: 10px;
+
+  }
+
+  .subject {
+    background-color: #7C98b2;
+    color: white;
+  }
+
+  .thesis {
+    transition: unset;
+  }
+
+  .thesis:hover {
+    display: none;
+  }
+
+  .thesis {
+    background-color: #7C98B2;
+    color: white;
+  }
 }
