@@ -1,29 +1,34 @@
-html {
-
+* {
+  margin: 0;
 }
 
 body {
   font-family: Helvetica;
   font-size: 16px;
-
   line-height: 1.25;
 }
 
 /* Container Padding */
 .container {
-  border: 2px solid blue;
   padding:32px 24px;
+}
 
+#container {
+  position: relative;
+  top: 67px;
 }
 
 /* Header */
 header {
-  /*border for tracking purposes only*/
-  border: 2px solid orange;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 64px;
-  padding: 0 24px;
+  padding-left: 24px;
+  position: fixed;
+  z-index: 5;
+  background-color: white;
+  width: 99%;
 }
 
 .logo {
@@ -40,19 +45,27 @@ header {
   font-weight: bold;
 }
 
-#light {
-  color: gray;
-}
-
-nav li {
-  display: inline-block;
-  padding: 24px 16px;
+nav  {
+  display: block;
+  padding: 16px 64px 16px 64px;
 }
 
 nav a {
   color: black;
   text-decoration: none;
+  padding: 8px 28px;
 }
+
+nav .link {
+  border-right: 1px solid black;
+}
+
+ nav .button {
+   color: white;
+   background-color: #7C98B2;
+   border-radius: 20px;
+}
+
 
 
 /* Primary, Secondary, and Exhibit Banner */
@@ -69,30 +82,43 @@ nav a {
   width: 40%;
 }
 
-/* Primary Content */
+/* Primary Banner Content */
+
 h1 {
   font-size: 3rem;
   font-weight: bold;
-  color: gray;
   padding-bottom: 24px;
 }
 
 .primary h5 {
   font-size: 1.75rem;
-  color: gray;
   padding-bottom: 24px;
 }
 
-.primary p {
-  background-color: gray;
-  border: 2px solid gray;
+.start {
+  background-color: #E0A65E;
   text-align: center;
-  padding: 8px 0;
+  width: 100%;
+  padding: 8px;
 }
 
-.primary a {
+.start a {
   color: white;
+  font-weight: bold;
   text-decoration: none;
+}
+
+.primary,
+#course-section {
+  color: #78736B;
+  background-color: #EAF1FF;
+}
+
+/* Secondary Banner and Exhibit */
+.secondary,
+.exhibit {
+  color: #78736B;
+  background-color: #F5FAFF;
 }
 
 /* Secondary Banner & Exhibit Media Content */
@@ -116,18 +142,26 @@ video {
   padding: 32px 0;
 }
 
-/* Secondary Banner and Thesis Exhibit Right Column */
+/* Secondary Banner & Exhibit Right Column */
 
 .about,
 .thesis {
-  border: 2px solid red;
   display: flex;
   align-items: center;
+  margin: 30px 0;
+  border-bottom: .5px solid #78736B;
+  border-left: .5px solid #78736B;
+  transition: all 750ms ease-out;
+}
+
+.about:hover,
+.thesis:hover {
+  background-color: #7C98B2;
+  color: white;
 }
 
 .about img,
 .thesis img {
-  height: auto;
   width: 35%;
   padding: 16px;
 }
@@ -138,7 +172,7 @@ video {
 
 .about-text h5,
 .exhibit h5 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: bold;
   padding-bottom: 8px;
 }
@@ -148,14 +182,13 @@ video {
 }
 
 .about-text a {
+  color: #E0A65E;
+  font-weight: bold;
   text-decoration: none;
 }
 
-/* Course Container */
 
-#course-section {
-  border: 2px solid goldenrod;
-}
+/* Course Container */
 
 .section-text h3 {
   font-size: 2rem;
@@ -168,24 +201,27 @@ video {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 32px 72px;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 32px;
 }
 
 .course {
-  border: 2px solid blue;
   display: flex;
   flex-direction: column;
-  max-width: 30%;
-  margin-bottom: 32px
-
+  width: 30%;
+  margin-bottom: 32px;
 }
 
 .course img {
-  height: auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .subject {
+  background-color: white;
   padding: 16px 24px 24px 16px;
+  height: 100%;
 }
 
 .subject h6 {
@@ -208,10 +244,12 @@ footer {
   justify-content: space-between;
   padding: 16px 24px 32px 24px;
   font-size: .75rem;
+  background-color: #7C98B2;
+  color: #F5FAFF;
 }
 
 footer a {
-  color: black;
+  color: #F5FAFF;
   text-decoration: none;
   padding-left: 8px;
 }
