@@ -453,11 +453,7 @@ footer a {
     color: white;
   }
 
-  .thesis {
-    transition: unset;
-  }
-
-  .thesis:hover {
+   .thesis:hover {
     display: none;
   }
 
@@ -465,4 +461,12 @@ footer a {
     background-color: #7C98B2;
     color: white;
   }
+
+  .transition {
+   -webkit-transition: none !important;
+   -moz-transition: none !important;
+   -o-transition: none !important;
+   -ms-transition: none !important;
+   transition: none !important;
+ }
 }
