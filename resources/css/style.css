@@ -259,12 +259,12 @@ footer a {
 
 /* Media Queries for Various Laptop/Tablet Viewports */
 @media only screen and (max-width: 1090px) {
-  /*header nav bar*/
+  /*Header Nav Bar*/
   nav a {
     padding: 8px 16px;
   }
 
-  /*primary banner*/
+  /*Primary Banner*/
   h1 {
     font-size: 2rem;
   }
@@ -291,12 +291,12 @@ footer a {
     font-size: 12px;
   }
 
-  /*header nav bar*/
+  /*Header Nav Bar*/
   nav a {
     padding: 8px 8px;
   }
 
-  /*primary banner*/
+  /*Primary Banner*/
   h1 {
     padding-bottom: 16px;
   }
@@ -318,7 +318,7 @@ footer a {
 }
 
 @media only screen and (max-width: 690px) {
-  /*header nav bar*/
+  /*Header Nav Bar*/
   .logo {
     font-size: .85rem;
   }
@@ -331,6 +331,7 @@ footer a {
     display: none;
   }
 
+  /*Primary Baner Left Column Content*/
   h1 {
     font-size: 1.5rem;
     padding-bottom: 8px;
@@ -341,10 +342,13 @@ footer a {
     padding-bottom: 8px;
   }
 
+  .start {
+    padding: 8px 0;
+  }
+
   /* Secondary Banner and Exhibit Content */
   .container {
     padding: 18px 8px;
-
   }
 
   .section-text h3 {
@@ -357,15 +361,11 @@ footer a {
     padding-bottom: 16px;
   }
 
-  .exhibit h5 {
-    text-align: center;
-  }
-
   .about-text p {
     display: none;
   }
 
-  /* Thesis Exhibt */
+  /*Course Section*/
   .subject h5 {
     font-size: 1rem;
     text-align: center;
@@ -376,6 +376,12 @@ footer a {
   .subject p {
     display: none;
   }
+
+  /* Exhibit Section */
+  .exhibit h5 {
+    text-align: center;
+  }
+
 }
 
 /*Media Queries for Mobile Viewport*/
@@ -390,6 +396,7 @@ footer a {
     top: 70px;
   }
 
+  /*Header/Mobile Nav Bar*/
   .mobile {
     display: flex;
     justify-content: space-around;
@@ -398,6 +405,7 @@ footer a {
     padding-left: 0;
   }
 
+  /*Primary Banner*/
   .main-image.container {
     width: 100%;
     padding: 0;
@@ -413,10 +421,7 @@ footer a {
     background-color: #D3E7F5;
   }
 
-  .start {
-    padding: 8px 0;
-  }
-
+  /*Secondary Banner*/
   .banner,
   .about {
     flex-direction: column;
@@ -441,12 +446,6 @@ footer a {
     width: 100%;
   }
 
-  .thesis img {
-    width: 45%;
-    padding-bottom: 10px;
-    margin-top: 0;
-  }
-
   .about a {
     font-size: 1rem;
   }
@@ -461,6 +460,7 @@ footer a {
     padding: 0;
   }
 
+  /*Course Section*/
   .course img {
     display: none;
   }
@@ -482,8 +482,15 @@ footer a {
     border-radius: 5px;
   }
 
+  /*Exhibit Section*/
   .thesis {
     background-color: #7C98B2;
     color: white;
+  }
+
+  .thesis img {
+    width: 45%;
+    padding-bottom: 10px;
+    margin-top: 0;
   }
 }
